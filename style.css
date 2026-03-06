@@ -1,0 +1,90 @@
+.map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Added styling to legend menu including font, box shadow, and positioning on page*/
+#menu {
+    position: absolute;
+    color: #555252;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 1px #bababa;
+    width: 180px;
+}
+/*added style for legend title*/
+#menu h3 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+/*styled legend buttons*/
+#menu button {
+    display: block;
+    color: #555252;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 6px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*selected highlight color for the active variable button, indicating background color was important because wasn't working at first to display color*/
+.var-button.active {
+    background-color: #ffd2ef !important;
+    border-radius: 5px;
+}
+
+/*used very discrete, modest styling for map-info located at bottom of the screen*/
+#map-info {
+    position: absolute;
+    color: rgb(132, 130, 126);
+    bottom: 0px;     
+    right: 690px;     
+    background: rgba(255, 255, 255, 0.4);
+    padding: 4px 8px;
+    font-family: Arial;
+    font-size: 10px;
+    border-radius: 3px;
+    z-index: 2;
+    pointer-events: none; /* allows clicks to pass through to map */
+}
+
+#legend {
+    margin-top: 10px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.legend-key {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* Defined styling for Reset button */
+#reset-map {
+    color: rgb(132, 130, 126);
+    position: absolute;
+    bottom: 35px;
+    right: 10px;
+    z-index: 2;
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 40px 1px #bababa;
+}
+

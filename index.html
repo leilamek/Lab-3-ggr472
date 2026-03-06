@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 GGr472</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Added a map info tag at the bottom of the screen with data sources and developer contact info-->
+    <div id="map-info">
+    Data Sources: City of Toronto Open Data (2019), StatsCanada (2021) | Contact: leilamekchoudi@gmail.com
+    </div>
+
+    <div id='my-map' class='map-container'></div>
+
+     <!--Legend and map title-->
+    <div id="menu">
+
+        <h3>Population and Housing in Toronto (2021)</h3>
+
+        <button class="var-button" onclick="setMap('popden', this)">Population Density</button>
+        <button class="var-button" onclick="setMap('apartment', this)">Apartments</button>
+        <button class="var-button" onclick="setMap('single', this)">Detached-Style</button>
+
+        <div id="legend"></div>
+
+    </div>
+
+    <!--Reset map extent button-->
+    <button id="reset-map">Reset Map</button>
+
+    <!-- Loaded mapbox-gl-geocoder plugin -->
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.css"
+        type="text/css">
+
+
+    <script src="script-events.js"></script>
+
+
+</body>
+
+</html>
